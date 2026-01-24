@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lab01.SmartHomeControllerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-01-24T04:22:31" hostname="gm-pc" time="0.009">
+<testsuite name="lab01.SmartHomeControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-01-24T05:30:27" hostname="gm-pc" time="0.057">
   <properties/>
-  <testcase name="duplicates()" classname="lab01.SmartHomeControllerTest" time="0.001"/>
-  <testcase name="sortedSingleElement()" classname="lab01.SmartHomeControllerTest" time="0.001"/>
-  <testcase name="unsorted()" classname="lab01.SmartHomeControllerTest" time="0.0"/>
-  <testcase name="sortedAAA()" classname="lab01.SmartHomeControllerTest" time="0.0"/>
-  <testcase name="sayHi()" classname="lab01.SmartHomeControllerTest" time="0.001"/>
-  <testcase name="sortedPartialSort()" classname="lab01.SmartHomeControllerTest" time="0.001"/>
-  <testcase name="sortedEmpty()" classname="lab01.SmartHomeControllerTest" time="0.001"/>
-  <system-out><![CDATA[Hello from the test.
-]]></system-out>
+  <testcase name="setTemp50RestrictionsEnabled()" classname="lab01.SmartHomeControllerTest" time="0.032"/>
+  <testcase name="setTemp50RestrictionsDisabled()" classname="lab01.SmartHomeControllerTest" time="0.002"/>
+  <testcase name="testGetTemp()" classname="lab01.SmartHomeControllerTest" time="0.002"/>
+  <testcase name="testGetRestrictions()" classname="lab01.SmartHomeControllerTest" time="0.006"/>
+  <testcase name="setTemp23RestrictionsEnabled()" classname="lab01.SmartHomeControllerTest" time="0.002"/>
+  <testcase name="testSetRestricitons()" classname="lab01.SmartHomeControllerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

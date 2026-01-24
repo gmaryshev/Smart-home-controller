@@ -5,32 +5,34 @@ package lab01;
 
 class SmartHomeController {
 
-	/** <code>SmartHomeController</code> should not normally be instantiated. */
-	private SmartHomeController() {
-	}
+    private int temp;
+    private boolean restrict;
 
-	/**
-	 * This method checks whether the provided array is sorted according to natural
-	 * ordering.
-	 *
-	 * @param array
-	 *            the array to check
-	 * @return whether the array is sorted according to natural ordering
-	 * @since 3.4
-	 */
-	public static boolean isSorted(final int[] array) {
-		if (array == null || array.length < 2) {
-			return true;
-		}
-		int previous = array[0];
-		final int n = array.length;
-		for (int i = 1; i < n; i++) {
-			final int current = array[i];
-			if (previous > current) {
-				return false;
-			}
-			previous = current;
-		}
-		return true;
+	/** <code>SmartHomeController</code> should not normally be instantiated. */
+	public SmartHomeController(int temp, boolean restrict) {
+        this.temp = temp;
+        this.restrict = restrict;
+        
 	}
+	
+    public int getTemp(){
+        return this.temp;
+    }
+
+    public int setTemp(int temp){
+        if(!restrict){
+            this.temp = temp;
+        } else {
+            if(temp >= 20 && temp <= 26){
+                this.temp = temp;
+            }
+        }
+        return this.temp;
+    }
+    public boolean getRestrictions(){
+        return this.restrict;
+    }
+    public boolean setRestrictions(boolean val) {
+        return this.restrict = val;
+    }
 }
